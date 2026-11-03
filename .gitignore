@@ -1,0 +1,8 @@
+# Секреты и рабочие данные не публикуются в Git
+DATA/
+LOGS/
+*.session
+*.session-journal
+__pycache__/
+*.pyc
+Thumbs.db
