@@ -34,7 +34,7 @@ if errorlevel 1 (
     exit /b 1
 )
 
-%PY% -c "import telethon, pystray, PIL" >nul 2>nul
+%PY% -c "import telethon, pystray, PIL, socks, python_socks" >nul 2>nul
 if errorlevel 1 (
     echo.
     echo Installing required libraries. This may take a minute...

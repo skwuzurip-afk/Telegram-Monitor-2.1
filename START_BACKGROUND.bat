@@ -19,11 +19,11 @@ if errorlevel 1 (
     set "PY=py -3"
 )
 
-%PY% -c "import telethon, pystray, PIL" >nul 2>nul
+%PY% -c "import telethon, pystray, PIL, socks, python_socks" >nul 2>nul
 if errorlevel 1 (
     echo Installing required libraries. This may take a minute...
     %PY% -m pip install -r "LIB\requirements.txt"
-    %PY% -c "import telethon, pystray, PIL" >nul 2>nul
+    %PY% -c "import telethon, pystray, PIL, socks, python_socks" >nul 2>nul
     if errorlevel 1 (
         echo Installation failed. Check your internet connection and try again.
         pause

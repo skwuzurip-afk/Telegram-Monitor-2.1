@@ -1,8 +1,30 @@
-# Секреты и рабочие данные не публикуются в Git
+# User settings, Telegram session, history, avatars, exports and logs
 DATA/
 LOGS/
+
+# Python generated files and local environments
+__pycache__/
+*.py[cod]
+*.pyd
+.venv/
+venv/
+env/
+
+# Local IDE and OS files
+.idea/
+.vscode/
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# Telegram authorization/session files, wherever created
 *.session
 *.session-journal
-__pycache__/
-*.pyc
-Thumbs.db
+
+# Local databases and backups
+*.db
+*.db-shm
+*.db-wal
+*.sqlite
+*.sqlite3
+*.bak
